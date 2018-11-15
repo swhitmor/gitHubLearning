@@ -1,0 +1,6 @@
+This is a test document.
+It was created using:
+	echo . >{filename}.txt
+This created a .txt file with the specified name containing a .
+To open the file:
+	open -a TextEdit {filename}.txt
