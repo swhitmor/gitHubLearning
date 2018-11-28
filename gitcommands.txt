@@ -12,6 +12,8 @@ repository from which it came
 To create a change to be committed to the repository
      git add {file name w/ extension}
 
+NOTE: 'git add .' or 'git add -A' add all changes
+
 To commit changes to the repository
      git commit
 
@@ -24,3 +26,25 @@ To push changes to repository on github.com
 
 To pull changes from github.com (note: must be in correct local directory)
      git pull
+
+If you and someone else have made changes to the same lines in a file, upon
+trying to pull changes, will receive a merge conflict. In the file looks
+like:
+
+<<<<<<< HEAD
+{my changes}
+=======
+{their changes}
+>>>>>>> fandsflbaerubf342rewa
+
+to fix: 
+1)manually edit file to appear how it should look, including the
+correct changes.
+2)git add -A
+3)git commit
+
+NOTE: if you use git commit without a message, will receive a VI file to
+create a multiline message. Enter message (or leave blank), then use
+command esc :wq to exit.
+
+Now when the other person executes git pull they will receive the updated files.
