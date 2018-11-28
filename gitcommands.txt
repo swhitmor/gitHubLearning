@@ -1,0 +1,26 @@
+Git Commands/Tips:
+
+Commands:
+
+To copy a repository from gitHub use the command
+     git clone {URL of repository}
+
+To see the differences between your current working directory and the gitHub
+repository from which it came
+     git status
+
+To create a change to be committed to the repository
+     git add {file name w/ extension}
+
+To commit changes to the repository
+     git commit
+
+To add a message to your commit
+     git commit -m "{insert text of message here}"
+
+NOTE: the above commands make changes to repository on local machine
+To push changes to repository on github.com
+     git push
+
+To pull changes from github.com (note: must be in correct local directory)
+     git pull
